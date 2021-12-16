@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Pulse</title>
+        <meta name="description" content="Home pulse allows you to monitor different metrics in your home.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <H1>Home Pulse</H1>
+
+        <H3>Welcome <span id="name"></span>! Today's date is <span id="date"></span>. </H3>
+        
+        <!-- Get date -->
+        <script>
+            var today = new Date();
+            var dt = (today.getMonth() + 1) +'-' + today.getDate() + '-' +today.getFullYear();
+            document.getElementById("date").innerHTML = dt;
+        </script>
+
+        <!-- Get name -->
+        <script>
+            // var name = prompt('Enter your name');
+            let name = "Bonnie";
+            document.getElementById("name").innerHTML = name;
+        </script>
+ 
+    </body>
+</html>
